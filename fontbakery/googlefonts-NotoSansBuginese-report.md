@@ -86,8 +86,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 0 | 7 | 112 | 7 | 108 | 0 |
-| 0% | 0% | 3% | 48% | 3% | 46% | 0% |
+| 1 | 0 | 7 | 111 | 7 | 109 | 0 |
+| 0% | 0% | 3% | 47% | 3% | 46% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
