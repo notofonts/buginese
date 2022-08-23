@@ -1,0 +1,9 @@
+{
+    "tests": [
+        {
+            "input": "ᨑᨚᨓ ᨑᨚᨉ",
+            "expectation": "uni1A11=0+689|uni1A1A=0+690|uni1A13=2+1219|space=3+260|uni1A11=4+689|uni1A1A=4+540|uni1A09=6+945",
+            "note": "See #1"
+        }
+    ]
+}

@@ -5,6 +5,8 @@ languagesystem bugi dflt;
 @GDEF_base = [uni1A00 uni1A01 uni1A02 uni1A03 uni1A04 uni1A05 uni1A06 uni1A07 uni1A08 uni1A09 uni1A0A uni1A0B uni1A0C uni1A0D uni1A0E uni1A0F uni1A10 uni1A11 uni1A12 uni1A13 uni1A14 uni1A15 uni1A16 uni1A19 uni1A1A uni1A1E uni1A1F iya.ligature uniA9CF uni200D uni25CC ];
 @GDEF_mark = [uni1A17 uni1A18 uni1A1B ];
 
+@southwest_consonants = [iya.ligature uni1A00 uni1A01 uni1A02 uni1A03 uni1A04 uni1A05 uni1A07 uni1A0A uni1A0B uni1A0C uni1A0D uni1A0E uni1A0F uni1A10 uni1A11 uni1A12 uni1A13 uni1A15];
+
 #GSUB
 lookup gsub_0_ligature {
     sub uni1A15 uni1A17 uni200D uni1A10 by iya.ligature ;
@@ -80,6 +82,10 @@ feature mark {
 			lookup gpos_0_mark_to_base;
 		} mark;
 
+# Fix overlapping vowel sign O (#1)
+feature dist {
+    pos uni1A1A' 150 @southwest_consonants;
+} dist;
 
 #GDEF
 
