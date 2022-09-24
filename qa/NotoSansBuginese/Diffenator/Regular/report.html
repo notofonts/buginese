@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 10pt;
+	line-height: 13pt;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1000;
+	}
+	.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+	.tooltip:hover .tooltiptext {
+	visibility: visible;
+	}
+	           /* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-before{
+                color: red;
+                cursor: text;
+            }
+            .attrib-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .before .cell .after {
+            	display:  none;
+            }
+            .after .cell .before {
+            	display:  none;
+            }
+            .both .cell .before {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .after {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+
+	  
+	    @font-face { font-family: before; src: url(before.ttf); }
+	  
+
+	  
+	    @font-face { font-family: after; src: url(after.ttf); }
+	  
+
+	  
+
+	  
+	    .before { font-family: before; }
+	  
+
+	  
+	    .after { font-family: after; }
+	  
+
+	  
+	
+.cell{
+  position: relative;
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">Before</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     
+<div class="node" >
+GDEF
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    GlyphClassDef
+      <div class="node" style="display:none">
+      classDefs
+        <div class="node" style="display:none">
+        uniA9CF
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        uni1A1F
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        uni1A1E
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        uni200D
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        uni1A1A
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+        <div class="node" style="display:none">
+        uni1A19
+          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+vhea
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">None</span> <span class="attrib-after">vhea</span>
+  </div>
+  <div class="node" style="display:none">
+  tableVersion
+    <span class="attrib-before">None</span> <span class="attrib-after">69632</span>
+  </div>
+  <div class="node" style="display:none">
+  ascent
+    <span class="attrib-before">None</span> <span class="attrib-after">500</span>
+  </div>
+  <div class="node" style="display:none">
+  descent
+    <span class="attrib-before">None</span> <span class="attrib-after">-500</span>
+  </div>
+  <div class="node" style="display:none">
+  lineGap
+    <span class="attrib-before">None</span> <span class="attrib-after">1000</span>
+  </div>
+  <div class="node" style="display:none">
+  advanceHeightMax
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  minTopSideBearing
+    <span class="attrib-before">None</span> <span class="attrib-after">86</span>
+  </div>
+  <div class="node" style="display:none">
+  minBottomSideBearing
+    <span class="attrib-before">None</span> <span class="attrib-after">-1255</span>
+  </div>
+  <div class="node" style="display:none">
+  yMaxExtent
+    <span class="attrib-before">None</span> <span class="attrib-after">1255</span>
+  </div>
+  <div class="node" style="display:none">
+  caretSlopeRise
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  caretSlopeRun
+    <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+  </div>
+  <div class="node" style="display:none">
+  caretOffset
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  reserved1
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  reserved2
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  reserved3
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  reserved4
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  metricDataFormat
+    <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+  </div>
+  <div class="node" style="display:none">
+  numberOfVMetrics
+    <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+  </div>
+</div>
+<div class="node" >
+GSUB
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    ScriptList
+      <div class="node" style="display:none">
+      ScriptRecord
+        <div class="node" style="display:none">
+        [1]
+          <div class="node" style="display:none">
+          ScriptTag
+            <span class="attrib-before">None</span> <span class="attrib-after">bugi</span>
+          </div>
+          <div class="node" style="display:none">
+          Script
+            <div class="node" style="display:none">
+            DefaultLangSys
+              <div class="node" style="display:none">
+              ReqFeatureIndex
+                <span class="attrib-before">None</span> <span class="attrib-after">65535</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureCount
+                <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureIndex
+                <div class="node" style="display:none">
+                [0]
+                  <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+                </div>
+              </div>
+            </div>
+            <div class="node" style="display:none">
+            LangSysCount
+              <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="node" style="display:none">
+      ScriptCount
+        <span class="attrib-before">1</span> <span class="attrib-after">2</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+head
+  <div class="node" style="display:none">
+  modified
+    <span class="attrib-before">3744109584</span> <span class="attrib-after">3746859910</span>
+  </div>
+  <div class="node" style="display:none">
+  checkSumAdjustment
+    <span class="attrib-before">317847537</span> <span class="attrib-after">4040208450</span>
+  </div>
+</div>
+<div class="node" >
+vmtx
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">None</span> <span class="attrib-after">vmtx</span>
+  </div>
+  <div class="node" style="display:none">
+  metrics
+    <div class="node" style="display:none">
+    .notdef
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">355</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    CR
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    NULL
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    iya.ligature
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">511</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    space
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni00A0
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A00
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">503</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A01
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">435</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A02
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">522</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A03
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">609</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A04
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">435</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A05
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">379</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A06
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">609</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A07
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">522</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A08
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">609</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A09
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">609</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A0A
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">609</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A0B
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">435</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A0C
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">435</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A0D
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">613</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A0E
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">608</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A0F
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">609</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A10
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">684</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A11
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">581</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A12
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">557</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A13
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">684</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A14
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">606</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A15
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">684</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A16
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">607</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A17
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">301</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A18
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1120</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A19
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">568</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A1A
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">598</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A1B
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">86</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A1E
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">550</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni1A1F
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">461</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni200B
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni200C
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni200D
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">1069</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uni25CC
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">529</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    uniA9CF
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">None</span> <span class="attrib-after">517</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+GPOS
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    LookupList
+      <div class="node" style="display:none">
+      LookupCount
+        <span class="attrib-before">3</span> <span class="attrib-after">2</span>
+      </div>
+      <div class="node" style="display:none">
+      Lookup
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          SubTable
+            <div class="node" style="display:none">
+            [0]
+              <div class="node" style="display:none">
+              BaseCoverage
+                <div class="node" style="display:none">
+                glyphs
+                  <div class="node" style="display:none">
+                  [23]
+                    <span class="attrib-before">uni25CC</span> <span class="attrib-after">None</span>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              BaseArray
+                <div class="node" style="display:none">
+                BaseCount
+                  <span class="attrib-before">24</span> <span class="attrib-after">23</span>
+                </div>
+                <div class="node" style="display:none">
+                BaseRecord
+                  <div class="node" style="display:none">
+                  [23]
+                    <div class="node" style="display:none">
+                    BaseAnchor
+                      <div class="node" style="display:none">
+                      [0]
+                        <div class="node" style="display:none">
+                        Format
+                          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        XCoordinate
+                          <span class="attrib-before">244</span> <span class="attrib-after">None</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        YCoordinate
+                          <span class="attrib-before">537</span> <span class="attrib-after">None</span>
+                        </div>
+                      </div>
+                      <div class="node" style="display:none">
+                      [1]
+                        <div class="node" style="display:none">
+                        Format
+                          <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        XCoordinate
+                          <span class="attrib-before">470</span> <span class="attrib-after">None</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        YCoordinate
+                          <span class="attrib-before">-15</span> <span class="attrib-after">None</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="node" style="display:none">
+        [1]
+          <div class="node" style="display:none">
+          SubTable
+            <div class="node" style="display:none">
+            [0]
+              <div class="node" style="display:none">
+              InputGlyphCount
+                <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+              </div>
+              <div class="node" style="display:none">
+              LookAheadGlyphCount
+                <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+              </div>
+              <div class="node" style="display:none">
+              PosCount
+                <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+              </div>
+              <div class="node" style="display:none">
+              MarkCoverage
+                <div class="node" style="display:none">
+                glyphs
+                  <div class="node" style="display:none">
+                  [0]
+                    <span class="attrib-before">None</span> <span class="attrib-after">uni1A17</span>
+                  </div>
+                  <div class="node" style="display:none">
+                  [1]
+                    <span class="attrib-before">None</span> <span class="attrib-after">uni1A18</span>
+                  </div>
+                  <div class="node" style="display:none">
+                  [2]
+                    <span class="attrib-before">None</span> <span class="attrib-after">uni1A1B</span>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              BacktrackGlyphCount
+                <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+              </div>
+              <div class="node" style="display:none">
+              PosLookupRecord
+                <div class="node" style="display:none">
+                [0]
+                  <div class="node" style="display:none">
+                  SequenceIndex
+                    <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+                  </div>
+                  <div class="node" style="display:none">
+                  LookupListIndex
+                    <span class="attrib-before">2</span> <span class="attrib-after">None</span>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              InputCoverage
+                <div class="node" style="display:none">
+                [0]
+                  <div class="node" style="display:none">
+                  glyphs
+                    <div class="node" style="display:none">
+                    [0]
+                      <span class="attrib-before">uni1A1A</span> <span class="attrib-after">None</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              LookAheadCoverage
+                <div class="node" style="display:none">
+                [0]
+                  <div class="node" style="display:none">
+                  glyphs
+                    <div class="node" style="display:none">
+                    [0]
+                      <span class="attrib-before">iya.ligature</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [1]
+                      <span class="attrib-before">uni1A00</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [2]
+                      <span class="attrib-before">uni1A01</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [3]
+                      <span class="attrib-before">uni1A02</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [4]
+                      <span class="attrib-before">uni1A03</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [5]
+                      <span class="attrib-before">uni1A04</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [6]
+                      <span class="attrib-before">uni1A05</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [7]
+                      <span class="attrib-before">uni1A07</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [8]
+                      <span class="attrib-before">uni1A0A</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [9]
+                      <span class="attrib-before">uni1A0B</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [10]
+                      <span class="attrib-before">uni1A0C</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [11]
+                      <span class="attrib-before">uni1A0D</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [12]
+                      <span class="attrib-before">uni1A0E</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [13]
+                      <span class="attrib-before">uni1A0F</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [14]
+                      <span class="attrib-before">uni1A10</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [15]
+                      <span class="attrib-before">uni1A11</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [16]
+                      <span class="attrib-before">uni1A12</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [17]
+                      <span class="attrib-before">uni1A13</span> <span class="attrib-after">None</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    [18]
+                      <span class="attrib-before">uni1A15</span> <span class="attrib-after">None</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              ClassCount
+                <span class="attrib-before">None</span> <span class="attrib-after">2</span>
+              </div>
+              <div class="node" style="display:none">
+              BaseCoverage
+                <div class="node" style="display:none">
+                glyphs
+                  <div class="node" style="display:none">
+                  [0]
+                    <span class="attrib-before">None</span> <span class="attrib-after">iya.ligature</span>
+                  </div>
+                  <div class="node" style="display:none">
+                  [1]
+                    <span class="attrib-before">None</span> <span class="attrib-after">uni25CC</span>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              Format
+                <span class="attrib-before">3</span> <span class="attrib-after">1</span>
+              </div>
+              <div class="node" style="display:none">
+              MarkArray
+                <div class="node" style="display:none">
+                MarkCount
+                  <span class="attrib-before">None</span> <span class="attrib-after">3</span>
+                </div>
+                <div class="node" style="display:none">
+                MarkRecord
+                  <div class="node" style="display:none">
+                  [0]
+                    <div class="node" style="display:none">
+                    Class
+                      <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    MarkAnchor
+                      <div class="node" style="display:none">
+                      Format
+                        <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                      </div>
+                      <div class="node" style="display:none">
+                      XCoordinate
+                        <span class="attrib-before">None</span> <span class="attrib-after">-157</span>
+                      </div>
+                      <div class="node" style="display:none">
+                      YCoordinate
+                        <span class="attrib-before">None</span> <span class="attrib-after">605</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="node" style="display:none">
+                  [1]
+                    <div class="node" style="display:none">
+                    Class
+                      <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    MarkAnchor
+                      <div class="node" style="display:none">
+                      Format
+                        <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                      </div>
+                      <div class="node" style="display:none">
+                      XCoordinate
+                        <span class="attrib-before">None</span> <span class="attrib-after">-342</span>
+                      </div>
+                      <div class="node" style="display:none">
+                      YCoordinate
+                        <span class="attrib-before">None</span> <span class="attrib-after">-15</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="node" style="display:none">
+                  [2]
+                    <div class="node" style="display:none">
+                    Class
+                      <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+                    </div>
+                    <div class="node" style="display:none">
+                    MarkAnchor
+                      <div class="node" style="display:none">
+                      Format
+                        <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                      </div>
+                      <div class="node" style="display:none">
+                      XCoordinate
+                        <span class="attrib-before">None</span> <span class="attrib-after">-586</span>
+                      </div>
+                      <div class="node" style="display:none">
+                      YCoordinate
+                        <span class="attrib-before">None</span> <span class="attrib-after">566</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              BaseArray
+                <div class="node" style="display:none">
+                BaseCount
+                  <span class="attrib-before">None</span> <span class="attrib-after">2</span>
+                </div>
+                <div class="node" style="display:none">
+                BaseRecord
+                  <div class="node" style="display:none">
+                  [0]
+                    <div class="node" style="display:none">
+                    BaseAnchor
+                      <div class="node" style="display:none">
+                      [0]
+                        <div class="node" style="display:none">
+                        Format
+                          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        XCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">634</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        YCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">488</span>
+                        </div>
+                      </div>
+                      <div class="node" style="display:none">
+                      [1]
+                        <div class="node" style="display:none">
+                        Format
+                          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        XCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">996</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        YCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">-15</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="node" style="display:none">
+                  [1]
+                    <div class="node" style="display:none">
+                    BaseAnchor
+                      <div class="node" style="display:none">
+                      [0]
+                        <div class="node" style="display:none">
+                        Format
+                          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        XCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">244</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        YCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">537</span>
+                        </div>
+                      </div>
+                      <div class="node" style="display:none">
+                      [1]
+                        <div class="node" style="display:none">
+                        Format
+                          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        XCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">470</span>
+                        </div>
+                        <div class="node" style="display:none">
+                        YCoordinate
+                          <span class="attrib-before">None</span> <span class="attrib-after">-15</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="node" style="display:none">
+          LookupType
+            <span class="attrib-before">8</span> <span class="attrib-after">4</span>
+          </div>
+        </div>
+        <div class="node" style="display:none">
+        [2]
+          <div class="node" style="display:none">
+          LookupType
+            <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+          </div>
+          <div class="node" style="display:none">
+          LookupFlag
+            <span class="attrib-before">0</span> <span class="attrib-after">None</span>
+          </div>
+          <div class="node" style="display:none">
+          SubTableCount
+            <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+          </div>
+          <div class="node" style="display:none">
+          SubTable
+            <div class="node" style="display:none">
+            [0]
+              <div class="node" style="display:none">
+              Format
+                <span class="attrib-before">1</span> <span class="attrib-after">None</span>
+              </div>
+              <div class="node" style="display:none">
+              Coverage
+                <div class="node" style="display:none">
+                glyphs
+                  <div class="node" style="display:none">
+                  [0]
+                    <span class="attrib-before">uni1A1A</span> <span class="attrib-after">None</span>
+                  </div>
+                </div>
+              </div>
+              <div class="node" style="display:none">
+              ValueFormat
+                <span class="attrib-before">4</span> <span class="attrib-after">None</span>
+              </div>
+              <div class="node" style="display:none">
+              Value
+                <div class="node" style="display:none">
+                XAdvance
+                  <span class="attrib-before">150</span> <span class="attrib-after">None</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    ScriptList
+      <div class="node" style="display:none">
+      ScriptRecord
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          Script
+            <div class="node" style="display:none">
+            DefaultLangSys
+              <div class="node" style="display:none">
+              FeatureCount
+                <span class="attrib-before">1</span> <span class="attrib-after">2</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureIndex
+                <div class="node" style="display:none">
+                [0]
+                  <span class="attrib-before">1</span> <span class="attrib-after">0</span>
+                </div>
+                <div class="node" style="display:none">
+                [1]
+                  <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="node" style="display:none">
+        [1]
+          <div class="node" style="display:none">
+          Script
+            <div class="node" style="display:none">
+            DefaultLangSys
+              <div class="node" style="display:none">
+              FeatureCount
+                <span class="attrib-before">1</span> <span class="attrib-after">2</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureIndex
+                <div class="node" style="display:none">
+                [1]
+                  <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    FeatureList
+      <div class="node" style="display:none">
+      FeatureRecord
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          Feature
+            <div class="node" style="display:none">
+            LookupListIndex
+              <div class="node" style="display:none">
+              [0]
+                <span class="attrib-before">1</span> <span class="attrib-after">0</span>
+              </div>
+            </div>
+          </div>
+          <div class="node" style="display:none">
+          FeatureTag
+            <span class="attrib-before">dist</span> <span class="attrib-after">abvm</span>
+          </div>
+        </div>
+        <div class="node" style="display:none">
+        [1]
+          <div class="node" style="display:none">
+          Feature
+            <div class="node" style="display:none">
+            LookupListIndex
+              <div class="node" style="display:none">
+              [0]
+                <span class="attrib-before">0</span> <span class="attrib-after">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+	    
+        
+      <div class="box">
+      <div class="box-title">glyphs: modified</div>
+      <span class="before" style="font-size: 32pt">
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᨛ</span>
+        <span class="before">ᨛ</span>
+        <span class="tooltiptext">
+            glyph: uni1A1B<br>
+            gids: [33]<br>
+            diff: 43.13075478078179
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᨗ</span>
+        <span class="before">ᨗ</span>
+        <span class="tooltiptext">
+            glyph: uni1A17<br>
+            gids: [29]<br>
+            diff: 47.87172860059146
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᨚ</span>
+        <span class="before">ᨚ</span>
+        <span class="tooltiptext">
+            glyph: uni1A1A<br>
+            gids: [32]<br>
+            diff: 50.563016460828784
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᨙ</span>
+        <span class="before">ᨙ</span>
+        <span class="tooltiptext">
+            glyph: uni1A19<br>
+            gids: [31]<br>
+            diff: 58.136734858035275
+        </span>
+    </div>
+</div>
+              </div>
+            
+              <div class="cat-glyphs subcat-modified">
+                <div class="cell">
+    <div class="tooltip">
+        <span class="after">ᨘ</span>
+        <span class="before">ᨘ</span>
+        <span class="tooltiptext">
+            glyph: uni1A18<br>
+            gids: [30]<br>
+            diff: 83.50664747049787
+        </span>
+    </div>
+</div>
+              </div>
+            
+        
+          </span>
+	    
+       </div>
+    
+    </div>
+
+    
+    <div class="box">
+      <div class="box-title">Fea</div>
+      
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right}
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+    </style>
+</head>
+
+<body>
+    
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        
+        <tbody>
+            <tr><td class="diff_next" id="difflib_chg_to0__0"><a href="#difflib_chg_to0__1">n</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__1">n</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap"><span class="diff_add">languagesystem&nbsp;DFLT&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap"><span class="diff_add">languagesystem&nbsp;bugi&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td><td class="diff_next"></td><td class="diff_header" id="to0_4">4</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">}&nbsp;GDEF;</td><td class="diff_next"></td><td class="diff_header" id="to0_5">5</td><td nowrap="nowrap">}&nbsp;GDEF;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_4">4</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_6">6</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_5">5</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_7">7</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_6">6</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution1&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_8">8</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution1&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_7">7</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to0_9">9</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_8">8</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to0_10">10</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_9">9</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni1A15&nbsp;uni1A17&nbsp;uni200D&nbsp;uni1A10&nbsp;by&nbsp;iya.ligature;</td><td class="diff_next"></td><td class="diff_header" id="to0_11">11</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni1A15&nbsp;uni1A17&nbsp;uni200D&nbsp;uni1A10&nbsp;by&nbsp;iya.ligature;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_10">10</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to0_12">12</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_11">11</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_13">13</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_12">12</td><td nowrap="nowrap">feature&nbsp;liga&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_14">14</td><td nowrap="nowrap">feature&nbsp;liga&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_13">13</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to0_15">15</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to0__1"></td><td class="diff_header" id="from0_14">14</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to0_16">16</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_15">15</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to0_17">17</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_16">16</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_18">18</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_17">17</td><td nowrap="nowrap">}&nbsp;liga;</td><td class="diff_next"></td><td class="diff_header" id="to0_19">19</td><td nowrap="nowrap">}&nbsp;liga;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_18">18</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_20">20</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_21">21</td><td nowrap="nowrap"><span class="diff_add">feature&nbsp;liga&nbsp;{</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_22">22</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;bugi;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_23">23</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_24">24</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_25">25</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_26">26</td><td nowrap="nowrap"><span class="diff_add">}&nbsp;liga;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_27">27</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+        </tbody>
+    </table>
+    <table class="diff" summary="Legends">
+        <tr> <th colspan="2"> Legends </th> </tr>
+        <tr> <td> <table border="" summary="Colors">
+                      <tr><th> Colors </th> </tr>
+                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>
+                      <tr><td class="diff_chg">Changed</td> </tr>
+                      <tr><td class="diff_sub">Deleted</td> </tr>
+                  </table></td>
+             <td> <table border="" summary="Links">
+                      <tr><th colspan="2"> Links </th> </tr>
+                      <tr><td>(f)irst change</td> </tr>
+                      <tr><td>(n)ext change</td> </tr>
+                      <tr><td>(t)op</td> </tr>
+                  </table></td> </tr>
+    </table>
+</body>
+
+</html>
+    </div>
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "before"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "before") {
+	  POSITION = "after"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("before", "after")
+            item.lastElementChild.className = item.lastElementChild.className.replace("before", "after")
+	    fontToggle.textContent = "After"
+	  }
+	  } else if (POSITION === "after") {
+	  POSITION = "both"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("after", "both")
+            item.lastElementChild.className = item.lastElementChild.className.replace("after", "both")
+	    fontToggle.textContent = "Both"
+	  }
+
+	  } else {
+	  POSITION = "before"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("both", "before")
+            item.lastElementChild.className = item.lastElementChild.className.replace("both", "before")
+	    fontToggle.textContent = "Before"
+	  }
+	}
+	}
+	fontToggle.addEventListener("click", switchFonts);
+	</script>
+    <script>
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    </script>
+</html>
